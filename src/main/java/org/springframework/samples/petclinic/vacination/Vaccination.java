@@ -28,7 +28,7 @@ public class Vaccination extends BaseEntity {
     LocalDate date;
 
     @ManyToOne
-    @JoinColumn(name = "vaccinated_pet_id")
+    @JoinColumn(name = "vaccinated_pet_id", nullable = false)
     Pet vaccinatedPet;
 
     @ManyToOne
